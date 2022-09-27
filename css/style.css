@@ -1,0 +1,135 @@
+html {
+  font-size: 62.5%;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Red Hat Display", sans-serif;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.6rem;
+  background-image: url("../images/pattern-background-mobile.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.card {
+  width: 80vw;
+  background-color: white;
+  border-radius: 15px;
+  overflow: hidden;
+}
+.card .main-img {
+  width: 80vw;
+}
+.card .text-box {
+  text-align: center;
+  margin: 0 1.6em;
+}
+.card .text-box h2 {
+  margin: 1em 0;
+  font-weight: 900;
+}
+.card .text-box .text {
+  margin: 1em 0.3em;
+  color: hsl(224deg, 23%, 55%);
+}
+.card .text-box .annual-plan {
+  display: flex;
+  background-color: hsl(225deg, 100%, 98%);
+  margin: 1.5em auto;
+  border-radius: 15px;
+}
+.card .text-box .annual-plan .music-img {
+  margin: 0.5em;
+}
+.card .text-box .annual-plan .annual-text-box {
+  font-size: 1.4rem;
+  margin: auto 0.8em;
+}
+.card .text-box .annual-plan .annual-text-box .annual-heading {
+  font-weight: 900;
+}
+.card .text-box .annual-plan .annual-text-box .cost {
+  margin-top: 0.1em;
+  color: hsl(224deg, 23%, 55%);
+}
+.card .text-box .annual-plan .annual-link {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin: auto;
+  margin-right: 2em;
+  color: hsl(245deg, 75%, 52%);
+  transition: color 0.3s;
+}
+.card .text-box .annual-plan .annual-link:hover {
+  color: hsla(255deg, 58%, 43%, 0.663);
+}
+.card .text-box .btn,
+.card .text-box .btn-cancel {
+  width: 100%;
+  height: 3.5em;
+  font-weight: 900;
+  font-family: "Red Hat Display", sans-serif;
+  border: none;
+  cursor: pointer;
+}
+.card .text-box .btn {
+  background-color: hsl(245deg, 75%, 52%);
+  color: white;
+  border-radius: 8px;
+  box-shadow: 0 10px 25px hsl(224deg, 23%, 55%);
+  transition: background-color 0.3s;
+}
+.card .text-box .btn:hover {
+  background-color: hsla(255deg, 58%, 43%, 0.663);
+}
+.card .text-box .btn-cancel {
+  margin: 0.8em 0;
+  background: none;
+  color: hsl(224deg, 23%, 55%);
+  transition: color 0.3s;
+}
+.card .text-box .btn-cancel:hover {
+  color: #000;
+}
+
+.attribution {
+  margin: 3em;
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  text-decoration: none;
+  color: hsl(228deg, 45%, 44%);
+}
+
+@media (min-width: 768px) {
+  .card {
+    width: 50vw;
+  }
+  .card .main-img {
+    width: 50vw;
+  }
+  .card .text-box .annual-plan .annual-text-box {
+    margin-left: 3em;
+  }
+}
+@media (min-width: 1200px) {
+  body {
+    background-image: url("../images/pattern-background-desktop.svg");
+  }
+  body .card {
+    width: 25vw;
+  }
+  body .card .main-img {
+    width: 25vw;
+  }
+}/*# sourceMappingURL=style.css.map */
